@@ -365,40 +365,8 @@ try {
     
     const sampleHouses = [
       {
-        title: "Maison,moderne",
-        description: "Magnifique villa de 4 chambres, salon spacieux, cuisine équipée, grand jardin extérieur sécurisé. Idéal pour grande famille.",
-        price: 350,
-        location: "Bandundu,basoko",
-        image: "https://www.bing.com/images/search?view=detailV2&ccid=CPCLpLt5&id=39324AD6F6DD227A4DBFB5276A4665C1623E550A&thid=OIP.CPCLpLt5vAsDKbLvtE_T1AHaE6&mediaurl=https%3a%2f%2falain-realty.net%2fwp-content%2fuploads%2f2020%2f12%2fVilla-a-vendre-a-Ma-campagne-2-1.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.08f08ba4bb79bc0b0329b2efb44fd3d4%3frik%3dClU%252bYsFlRmontQ%26pid%3dImgRaw%26r%3d0&exph=996&expw=1500&q=maison+kinshasa&FORM=IRPRST&ck=677B3796F11D8E18B3883B4FF61FCF0D&selectedIndex=2&itb=0"
-      },
-      {
-        title: "Appartement ",
-        description: "Bel appartement meublé de deux chambres, salon lumineux, cuisine moderne, climatisation et eau stable. Quartier calme et sécurisé à deux pas du fleuve.",
-        price: 180,
-        location: "Bandundu, Quartier Malebo",
-        image: "https://www.bing.com/images/search?view=detailV2&ccid=uQzSd8JG&id=AF714C36DA775426436B4D13C8A29DB2139B6D4D&thid=OIP.uQzSd8JGQ-e3w4BX2187SQHaFj&mediaurl=https%3a%2f%2fimages.coinafrique.com%2f2853309_uploaded_image1_1608990309.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b90cd277c24643e7b7c38057db5f3b49%3frik%3dTW2bE7KdosgTTQ%26pid%3dImgRaw%26r%3d0&exph=600&expw=800&q=maison+kinshasa&FORM=IRPRST&ck=E183639DCCD0421275A8B1701F5C703A&selectedIndex=3&itb=0"
-      {
-        title: "Maison familiale spacieuse",
-        description: "Maison de plain-pied comprenant 3 chambres, douches privées, forage d'eau avec réservoir, raccordée au réseau électrique principal. Clôture en béton intégrée.",
-        price: 250,
-        location: "Bandundu, Quartier monusco ",
-        image: "https://www.bing.com/images/search?view=detailV2&ccid=uQzSd8JG&id=AF714C36DA775426436B4D13C8A29DB2139B6D4D&thid=OIP.uQzSd8JGQ-e3w4BX2187SQHaFj&mediaurl=https%3a%2f%2fimages.coinafrique.com%2f2853309_uploaded_image1_1608990309.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b90cd277c24643e7b7c38057db5f3b49%3frik%3dTW2bE7KdosgTTQ%26pid%3dImgRaw%26r%3d0&exph=600&expw=800&q=maison+kinshasa&FORM=IRPRST&ck=E183639DCCD0421275A8B1701F5C703A&selectedIndex=3&itb=0"
-    ];
-
-    const insertStmt = db.prepare(
-      "INSERT INTO listings (title, description, price, location, image, userId, userName) VALUES (?, ?, ?, ?, ?, ?, ?)"
-    );
-
-    for (const house of sampleHouses) {
-      insertStmt.run(house.title, house.description, house.price, house.location, house.image, 1, "Grace Ndwite");
-    }
-    console.log("Default listings successfully seeded!");
-  }
-} catch (seedErr) {
-  console.error("Error seeding data:", seedErr);
-}
-
-
+  
+   
 // --- SPA ROUTING & VITE SERVING ---
 
 async function startServer() {
