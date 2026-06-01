@@ -1,0 +1,6 @@
+{
+  "name": "Casaloc",
+  "description": "Trouvez ou publiez des maisons à louer à Bandundu facilement et gratuitement.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
